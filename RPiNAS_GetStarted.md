@@ -18,10 +18,11 @@ Set up the SD Card
         psk="WIFI_PASSWORD"
         key_mgmt=WPA-PSK
         }
- 7. Restart the Pi: sudo reboot 
+ 7. 
  
- When the Pi starts up again, it should connect to your wifi within 30-45 seconds. 
-        
+ Restart the Pi (unplug battery?). When the Pi starts up again, it should connect to your wifi within 30-45 seconds. 
+ If you are re-installing the image and connecting to the os again, you have to modify your known-hosts file       
+	
 Connect to the RPI
 1.	Ssh pi@raspberrypi.local
 a.	User: pi
@@ -87,3 +88,11 @@ Find device in Windows:
 
 Shutdown:
 	Sudo shutdown -h now
+	
+# Todo:
+What is causing me problems?
+- Connecting to a Plex server
+- transferring files using scp to the NAS Share directory, or to a mounted directory in general. The permissions keep changing to root, even though I specify them as user owned in both /dev/sda1 and also /mnt/volume (assuming: sudo mount /dev/sda1/ /mnt/volume). That mounted drive is untouchable. 
+- (aka) transferring files using scp to a mounted disk 
+- Why when I reboot my OS, do I lose the ssh and wpa_supplicant.conf files i created? 
+
