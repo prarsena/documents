@@ -96,3 +96,6 @@ What is causing me problems?
 - (aka) transferring files using scp to a mounted disk 
 - Why when I reboot my OS, do I lose the ssh and wpa_supplicant.conf files i created? 
 
+set up pihole
+https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
+
