@@ -89,6 +89,18 @@ Find device in Windows:
 Shutdown:
 	Sudo shutdown -h now
 	
+	
+Transfer files to the RPi:
+	You can only move files into a user directory (I think). 
+	so on the pi, create a dir within your user or home. 
+	mkdir /home/pi/docs
+	#On the source machine, run scp:
+	scp Documents/file.txt pi@raspberrypi.local:/home/pi/docs 
+	
+	# To copy a directory use -r  
+	scp -r url_module/ pi@raspberrypi.local:/home/pi/media
+	
+	
 # Todo:
 What is causing me problems?
 - Connecting to a Plex server
