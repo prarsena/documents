@@ -1,4 +1,4 @@
-In the node REPL mode (type `node`):
+## In the node REPL mode (type `node`):
 	
 	- to clear the console: cmd + k
 	
@@ -17,4 +17,8 @@ In the node REPL mode (type `node`):
 
 	- To exit: ctrl + d
 
-	- 
+## General new node/javascript things:
+
+	-   Read from a file require `fs` module : `const input = fs.readFileSync('./file.txt', 'utf-8')
+
+	-   ES6 template string : ` \`Here is my input string: ${input} and it is ${Date.now()}\` `` 
