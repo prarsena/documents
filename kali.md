@@ -13,3 +13,9 @@ root@kali:~# ifconfig eth0 hw ether 00:11:22:33:44:55
 root@kali:~# ifconfig eth0 up
 root@kali:~# ifconfig 
 ```
+
+
+To get original MAC address:
+```
+ethtool -P eth0
+```
