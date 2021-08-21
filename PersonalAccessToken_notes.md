@@ -12,3 +12,7 @@ In order to use a PAT in practice:
 3. Add the remote repo again, including your credentials before the repo URL:
       `remote add origin https://<your_username>:<your_token>@github.com/username/repo.git`
 4. Push your changes: `git push origin main`
+
+
+PATs are also needed for cloning private repos. Can be done using the same format described in step 3. 
+`git clone https://<your_username>:<your_token>@github.com/username/repo.git`
